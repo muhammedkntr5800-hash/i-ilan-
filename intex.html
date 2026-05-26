@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İş İlanları Platformu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>İş İlanları</h1>
+    <nav>
+      <a href="#">Ana Sayfa</a>
+      <a href="#">İlanlar</a>
+      <a href="#">Hakkımızda</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- İlan ekleme formu -->
+    <section id="ilan-form">
+      <h2>Yeni İlan Ekle</h2>
+      <form id="form">
+        <input type="text" id="baslik" placeholder="İlan Başlığı" required>
+        <input type="text" id="sirket" placeholder="Şirket Adı" required>
+        <input type="text" id="konum" placeholder="Konum" required>
+        <input type="url" id="resim" placeholder="Resim URL (opsiyonel)">
+        <textarea id="aciklama" placeholder="Açıklama" required></textarea>
+        <button type="submit">İlanı Ekle</button>
+      </form>
+    </section>
+
+    <!-- İlanlar listesi -->
+    <section id="ilanlar"></section>
+
+    <!-- Başvuru listesi -->
+    <section id="basvurular">
+      <h2>Başvurularım</h2>
+      <p id="basvuru-sayisi">Toplam 0 başvuru yaptınız.</p>
+      <ul id="basvuru-listesi"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 İş İlanları Platformu</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
